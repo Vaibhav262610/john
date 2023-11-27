@@ -23,7 +23,7 @@ const Experience = () => {
         <div className='h-screen justify-center flex items-center'>
             <div className=' w-screen justify-center flex-col flex items-center '>
                 <div>
-                    <h1 className='about-heading'>EXPERIENCE</h1>
+                    <h1 className='about-exp about-heading'>EXPERIENCE</h1>
                 </div>
                 <div className='w-9/12'>
                 <button type="button" class="collapsible">Open Section 1</button>

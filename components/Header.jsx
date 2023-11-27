@@ -4,17 +4,17 @@ import React from 'react'
 const Header = () => {
   return (
     <>
-        <div className='h-screen justify-center flex items-center'>
-            <div className=' w-9/12 flex items-center '>
+        <div className=' h-screen justify-center flex items-center'>
+            <div className='heading w-9/12 flex items-center '>
                 <div>
-                    <h2 className='pb-4 text-3xl '>Hi, I am</h2>
-                    <h1 className='pb-4 text-8xl font-bold '>JOHN ROHIT</h1>
+                    <h2 className='new pb-4 text-3xl '>Hi, I am</h2>
+                    <h1 className='pb-4 name text-8xl font-bold '>JOHN ROHIT</h1>
                     {/* <h2 className='pb-4 text-2xl '>DATA SCIENTIST</h2> */}
-                    <div className="text-3xl scroller">
+                    <div className="new-text text-3xl scroller">
                         <span>
                         DATA SCIENTIST<br/>
                         MACHINE LEARNING<br/>
-                        DEEP LEARNING
+                        DEEP LEARNIN
 
                         </span>
                     </div>

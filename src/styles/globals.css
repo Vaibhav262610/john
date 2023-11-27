@@ -206,41 +206,51 @@ body{
 }
 
 @media (max-width: 780px) {
-  html {
-    font-size: 50%;
-  }
   .nav_list{
  
     display: none;
   }
-  .video-editor-name{
-    font-size: 5.5rem;
+  .name{
+    font-size: 10rem;
   }
-  .video-editor-demo{
+  .new{
     font-size: 2rem;
   }
-  .circle{
-    padding: 6rem 6rem;
-  }
-  .container{
-    top: 8rem;
-  }
-  .about_editor{
-    font-size: 1.3rem;
-  }
-  .contact_row{
-    flex-direction: column;
-    font-size: 31rem;
-  }
-  .para{
-    font-size: 1.4rem;
-  }
-  .contact_head{
-    font-size: 1.5rem;
-  }
-  .editor{
-    font-size: 1.2rem;
-  }
+ .heading{
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  /* background-color: pink; */
+ }
+ .cv-btn{
+  font-size: 1.3rem;
+ }
+ .about{
+  width: auto;
+ }
+ .about-head{
+  font-size: 2rem;
+  width: auto;
+ }
+ .about-para{
+  font-size: 1.9rem;
+  width: auto;
+ }
+ .about-heading{
+  font-size: 8rem;
+ }
+ .project-btn{
+  font-size: 1.3rem;
+  /* width: fit-content; */
+ }
+ .new-text{
+  font-size: 4rem;
+ }
+ .para{
+  width: auto;
+  font-size: 2rem;
+ }
 }
 
 
@@ -252,13 +262,7 @@ body{
 
 
 @media (max-width: 550px) {
-  .video-editor-name{
-    /* padding-left: 5rem; */
-    font-size: 9rem;
-    text-align: center;
-  }
-  .long{
-    font-size: 3rem;
-    padding-top: 5rem;
+  .about-exp{
+    font-size: 6rem;
   }
 }
