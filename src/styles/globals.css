@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+h1 {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgba(43,171,217,1) 0%, rgba(0,130,200,1) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.card {
+  position: absolute;
+  background-color: #F8F8F8;
+  border-radius: 1.5em;
+  min-width: 400px;
+  max-width: 1170px;
+  width: 30%;
+  padding: 2.6em 3.8em;
+  cursor: pointer;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 40%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 
+    0 8px 8px rgba(0, 0, 0, 0.1),
+    0 16px 16px rgba(0, 0, 0, 0.1), 
+    0 32px 32px rgba(0, 0, 0, 0.15),
+    0 64px 64px rgba(0, 0, 0, 0.15);
+}
+.note::after {
+  content: '';
+  width: 20%;
+  height: 2px;
+  border-radius: 999px;
+  background-color: #AFAFAF;
+  background: linear-gradient(135deg, rgba(43,171,217,1) 0%, rgba(0,130,200,1) 100%);
+  position: absolute;
+  top: -1.8em;
+  left: 0;
+}
+.note {
+  font-size: 0.8em;
+  color: #8A8A8A;
+  position: relative;
+  margin-top: 4em;
+}
+
+/* Scroller styling */
+.scroller {
+  height: 1.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 15 em;
+}
+.scroller > span {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+  font-weight: bold;
+  
+}
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+}
+
+body{
+  /* background-color: black; */
+  font-family: 'Jost', sans-serif;
+  overflow-x: hidden;
+}
+
+
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E0E0E0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255);
+}
+
+
+
+::selection {
+  /* color: white; */
+  /* background: rgb(255, 255, 255)  ; */
+}
+
+.nav_list{
+  /* background-color: aliceblue; */
+  font-family: 'Jost', sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  font-size:1.1rem;
+
+}
+
+.para{
+  letter-spacing: 3px;
+}
+
+.navbar{
+  /* position: fixed; */
+  -webkit-backdrop-filter: blur(0.8rem);
+  backdrop-filter: blur(0.8rem);
+  /* height: 10%; */
+  /* background-color: aqua  ; */
+}
+
+
+.nav{
+  width: 90%;
+}
+
+.mian-button{
+  font-weight: lighter;
+}
+
+
+.cv-btn{
+  padding:0.8rem 1.3rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border:2px solid black;
+
+}
+
+.project-btn{
+  padding:0.8rem 1.3rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border:2px solid black;
+  background-color: black;
+  color: white;
+
+}
+
+.cv-btn:hover{
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+
+.project-btn:hover{
+  background-color: white;
+  transition: 0.4s;
+  color: black;
+}
+
+.about-heading{
+  font-size: 12rem;
+}
+
+.b1{
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.b1:hover{
+  background-color: white;
+  transition: 0.3s;
+  color: black;
+  fill: black;
+}
+
+
+.a1{
+  fill: white;
+  transform: scale(2);
+  /* transform: rotate(); */
+}
+
+@media (max-width: 780px) {
+  html {
+    font-size: 50%;
+  }
+  .nav_list{
+ 
+    display: none;
+  }
+  .video-editor-name{
+    font-size: 5.5rem;
+  }
+  .video-editor-demo{
+    font-size: 2rem;
+  }
+  .circle{
+    padding: 6rem 6rem;
+  }
+  .container{
+    top: 8rem;
+  }
+  .about_editor{
+    font-size: 1.3rem;
+  }
+  .contact_row{
+    flex-direction: column;
+    font-size: 31rem;
+  }
+  .para{
+    font-size: 1.4rem;
+  }
+  .contact_head{
+    font-size: 1.5rem;
+  }
+  .editor{
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (max-width:1220px) {
+  html{
+    font-size: 60%;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .video-editor-name{
+    /* padding-left: 5rem; */
+    font-size: 9rem;
+    text-align: center;
+  }
+  .long{
+    font-size: 3rem;
+    padding-top: 5rem;
+  }
+}
